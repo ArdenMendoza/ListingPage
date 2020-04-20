@@ -1,10 +1,24 @@
 import React from 'react';
+import { ReactComponent as Logo } from '../assets/adrenalin.svg';
+import { Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <div>
-        <div>Header | menu items here</div>
-    </div>
+    <Nav className={'navbar navbar-light bg-'} style={{ display: 'flex', minWidth: '1000px', maxWidth: '1400px', margin: '0px auto' }}>
+      <a className='navbar-brand' href="#" style={{ width: '80px' }}>
+        <Link to='/'>
+          <Logo />
+        </Link>
+      </a>
+      <ul style={{ listStyleType: 'none' }}>
+        <li>Culture</li>
+        <li>Work</li>
+        <li>Clients</li>
+        <li>Careers</li>
+        <li>Contact</li>
+      </ul>
+    </Nav>
   );
 }
 

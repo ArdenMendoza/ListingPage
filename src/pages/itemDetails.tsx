@@ -45,7 +45,7 @@ export class ItemDetails extends React.Component<Props, state> {
             qCount++;
             return <div className={'itemDetailQGroup'}>
               <div className={'itemDetailQLabel'} >Question {qCount}</div>
-              <div>{q}</div>
+              <div style={{textAlign: 'justify'}}>{q}</div>
             </div>
           })}
         </div>
