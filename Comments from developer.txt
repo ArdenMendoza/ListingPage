@@ -1,0 +1,44 @@
+﻿
+Upon downloading the codes
+1. Open terminal as an administrator(just to be sure)
+2. Navigate to the directory where you found this txt file. 
+3. Execute 'npm install'. This is so that all dependencies will be installed. 
+4. Once done, to open the app, execute 'npm start'.
+
+
+Comments:
+1. I took note from the instructions that you will be looking for simple, performant and well written code. 
+I was very careful not to overkill the small application with redux. So I didn't use redux. 
+2. I heard from joseph that the url for the details page should be different so I used react-router-dom
+3. As I was staring at the fonts in the sketch file, I don't think it's either Arial or Georgia. But I settled with Arial since it looks close.
+4. I added a link back to "/" or home in the svg (ADRENALIN) for easier navigation.
+5. I used an inline format for the list. It stacks from left to right, top to bottom. I did this so that the "list" will flow through the page downwards. I didn't use any grid layout from bootstrap and the like as it defeats the purpose of having a possibly dynamic list of items. Hence the inline <card> components. I made sure it always takes 50% of it's container so it the view will always have 2 columns.
+
+
+Thank you so much for this opportunity. I refreshed my knowledge a lot. I hope I did well :)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Please hire me :|
