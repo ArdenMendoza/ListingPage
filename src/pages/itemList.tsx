@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import data from '../feed/data.json';
+import CustomCard from '../components/customCard';
 
 export class ItemList extends React.Component {
 
@@ -12,31 +13,15 @@ export class ItemList extends React.Component {
     };
   }
 
-  componentDidMount() {
-
-  }
-  handleEvent() {
-    console.log(this.props);
-  }
-
   render() {
     return <div style={{height: "100%"}}>
-      {
-        data.map(m => {
-          const thumb = require('../assets/' + m.thumb);
-          return <Card style={{ height: '450px' }}>
-            <div className="cardImage" style={{ flex: 1, overflow: 'hidden' }}>
-              <img src={thumb} style={{ height: '100%' }} />
-            </div>
-            <div className="cardTitle" style={{ height: '30px' }}>
-              {m.title}
-            </div>
-            <Link to={`/itemDetails/${m.id}`}>
-              <span className="cardLink">View Case Study</span>
-            </Link>
-          </Card>
-        })
-      }
+      <div style={{ height: "100%", margin: '0px auto', maxWidth: '1000px',  }}>
+        {
+          data.map(m => {
+            return <CustomCard itemDetails={m} />
+          })
+        }
+      </div>
     </div>
   }
 }
