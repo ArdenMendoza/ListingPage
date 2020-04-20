@@ -1,15 +1,12 @@
 import React from 'react';
-import { ReactComponent as Logo } from '../assets/adrenalin.svg';
 import { Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import Logo from '../components/logo';
 
 function Header() {
   return (
     <Nav className={'navbar navbar-light navHeader'}  style={{ display: 'flex', margin: '0px auto' }}>
       <a className='navbar-brand' href="#" style={{ width: '80px' }}>
-        <Link to='/'>
-          <Logo />
-        </Link>
+        <Logo/>
       </a>
       <ul style={{ listStyleType: 'none' }}>
         <li>Culture</li>

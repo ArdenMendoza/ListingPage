@@ -1,7 +1,7 @@
 import React from 'react';
 import data from '../feed/data.json';
 import { RouteComponentProps } from 'react-router';
-import { itemDetails } from '../feed/model';
+import { item } from '../feed/model';
 
 interface MatchParams {
   id: string;
@@ -11,14 +11,14 @@ interface Props extends RouteComponentProps<MatchParams> {
 }
 
 interface state {
-  itemDetails: itemDetails
+  itemDetails: item
 }
 
 export class ItemDetails extends React.Component<Props, state> {
   constructor(props: Props) {
     super(props);
     this.state = {
-      itemDetails: {} as itemDetails
+      itemDetails: {} as item
     };
   }
   componentWillMount() {

@@ -1,13 +1,18 @@
 import React from 'react';
 import data from '../feed/data.json';
 import CustomCard from '../components/customCard';
+import { item } from '../feed/model';
 
-export class ItemList extends React.Component {
-
+interface Props {
+}
+interface state {
+  items: item[]
+}
+export class ItemList extends React.Component<Props, state>{
   constructor(props: any) {
     super(props);
     this.state = {
-      items: data,
+      items: data
     };
   }
 
@@ -15,7 +20,7 @@ export class ItemList extends React.Component {
     return <div style={{height: "100%"}}>
       <div style={{ height: "100%"  }}>
         {
-          data.map(m => {
+          this.state.items.map(m => {
             return <CustomCard itemDetails={m} />
           })
         }

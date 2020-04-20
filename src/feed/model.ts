@@ -1,5 +1,4 @@
-
-export interface itemDetails {
+export interface item {
     id: number;
     title: string;
     title_long: string;

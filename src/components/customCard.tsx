@@ -1,10 +1,10 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { itemDetails } from '../feed/model';
+import { item } from '../feed/model';
 
 interface props {
-    itemDetails: itemDetails;
+    itemDetails: item;
 }
 
 export const customCard = ({ itemDetails }: props) => {
