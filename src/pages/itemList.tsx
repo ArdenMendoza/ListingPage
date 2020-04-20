@@ -13,7 +13,7 @@ export class ItemList extends React.Component {
 
   render() {
     return <div style={{height: "100%"}}>
-      <div style={{ height: "100%", margin: '0px auto', maxWidth: '1000px',  }}>
+      <div style={{ height: "100%"  }}>
         {
           data.map(m => {
             return <CustomCard itemDetails={m} />

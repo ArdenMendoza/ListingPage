@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <div className="App" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
         <Header />
-        <div style={{ flex: 1, overflowY: 'auto' }}>
+        <div style={{ flex: 1, overflowY: 'auto', width: '1350px', margin: '0px auto' }}>
           <Switch>
             <Route path="/" exact component={ItemList} />
             <Route path="/itemDetails/:id" component={ItemDetails} />

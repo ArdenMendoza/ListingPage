@@ -34,7 +34,7 @@ export class ItemDetails extends React.Component<Props, state> {
     let qCount: number = 0;
 
     return <div style={{ height: "100%" }}>
-      <div style={{ display: 'flex', height: '100%', maxWidth: '1000px', margin: '0px auto' }}>
+      <div style={{ display: 'flex', height: '100%' }}>
         <div style={{ flex: 1, width: '50%', height: '100%' }}>
           <div style={{ height: '100%', backgroundImage: imageUrl, backgroundSize: 'auto', backgroundRepeat: 'no-repeat' }}>
           </div>

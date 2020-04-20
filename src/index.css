@@ -108,3 +108,7 @@ ul > li {
   padding-left: 30px;
 
 }
+.navHeader, .navFooter {
+  width: 1350px;
+  height: 70px
+}

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <Nav className={'navbar navbar-light bg-'} style={{ display: 'flex', minWidth: '1000px', maxWidth: '1400px', margin: '0px auto' }}>
+    <Nav className={'navbar navbar-light navHeader'}  style={{ display: 'flex', margin: '0px auto' }}>
       <a className='navbar-brand' href="#" style={{ width: '80px' }}>
         <Link to='/'>
           <Logo />

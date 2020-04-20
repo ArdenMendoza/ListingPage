@@ -8,11 +8,15 @@ interface props {
 }
 
 export const customCard = ({ itemDetails }: props) => {
-    const thumb = require('../assets/' + itemDetails.thumb);
+    const thumb = 'url(' + require('../assets/' + itemDetails.thumb) + ')';
 
     return <Card style={{ height: '450px' }}>
-        <div className="cardImage" style={{ flex: 1, overflow: 'hidden', height: '500px' }}>
-            <img src={thumb} style={{ height: '100%' }} />
+        <div className="cardImage" style={{
+            flex: 1, overflow: 'hidden', 
+            backgroundImage: thumb,
+            backgroundSize: 'cover',
+            height: '350px',
+        }}>
         </div>
         <div className="cardTitle">
             {itemDetails.title_long}
@@ -20,7 +24,7 @@ export const customCard = ({ itemDetails }: props) => {
         <Link to={{ pathname: `/itemDetails/${itemDetails.id}`, state: { id: itemDetails.id } }}>
             <span className="cardLink">View Case Study</span>
         </Link>
-    </Card>
+    </Card >
 }
 
 export default customCard;
