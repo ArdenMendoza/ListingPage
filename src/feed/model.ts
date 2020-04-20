@@ -1,6 +1,5 @@
-import React from 'react';
 
-export interface item {
+export interface itemDetails {
     id: number;
     title: string;
     title_long: string;
@@ -8,5 +7,5 @@ export interface item {
     thumb: string;
     image: string;
     slug: string;
-    questions: string;
+    questions: string[];
 }
