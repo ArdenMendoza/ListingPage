@@ -12,13 +12,18 @@ export const customCard = ({ itemDetails }: props) => {
 
     return <Card style={{ height: '450px' }}>
         <div className="cardImage" style={{
-            flex: 1, overflow: 'hidden', 
+            flex: 1, overflow: 'hidden',
             backgroundImage: thumb,
             backgroundSize: 'cover',
             height: '350px',
         }}>
         </div>
-        <div className="cardTitle">
+        <div style={{
+            fontWeight: 'bold',
+            fontSize: '18px',
+            fontFamily: 'Arial',
+            padding: '20px 0px 20px 0px'
+        }}>
             {itemDetails.title_long}
         </div>
         <Link to={{ pathname: `/itemDetails/${itemDetails.id}`, state: { id: itemDetails.id } }}>

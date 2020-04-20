@@ -44,8 +44,9 @@ export class ItemDetails extends React.Component<Props, state> {
           {details.questions.map(q => {
             qCount++;
             return <div className={'itemDetailQGroup'}>
-              <div className={'itemDetailQLabel'} >Question {qCount}</div>
-              <div style={{textAlign: 'justify'}}>{q}</div>
+              <div style={{ fontSize: '20px', fontWeight: 1000}}>
+                Question {qCount}</div>
+              <div style={{ textAlign: 'justify' }}>{q}</div>
             </div>
           })}
         </div>

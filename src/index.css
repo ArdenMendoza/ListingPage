@@ -42,11 +42,6 @@ a:hover{
   width: 30px;
   content: "";
 }
-.cardTitle {
-  font-weight: bold;
-  font-size: 18px;
-  font-family: Arial
-}
 
 .cardImage {
   background-repeat: no-repeat;
@@ -77,10 +72,6 @@ a:hover{
   padding-bottom: 30px;
 }
 
-.itemDetailQLabel {
-  font-size: 25px;
-  font-weight: 1000;
-}
 
 svg {
   -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
@@ -105,7 +96,8 @@ ul {
 
 ul > li {
   float: left;
-  padding-left: 30px;
+  padding-left: 40px;
+  font-size: 14px;
 
 }
 .navHeader, .navFooter {
