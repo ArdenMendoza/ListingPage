@@ -1,7 +1,6 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import data from '../feed/data.json';
 import { itemDetails } from '../feed/model';
 
 interface props {
