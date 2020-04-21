@@ -21,7 +21,7 @@ export const customCard = ({ itemDetails }: props) => {
         </div>
         <div style={{
             fontWeight: 'bold',
-            fontSize: '21px',
+            fontSize: '24px',
             fontFamily: 'Arial',
             padding: '20px 0px 20px 0px'
         }}>

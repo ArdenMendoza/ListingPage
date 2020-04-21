@@ -27,7 +27,7 @@ a:hover{
 .cardLink{
   text-transform: uppercase;
   font-family: Arial;
-  font-size: 11px;
+  font-size: 13px;
   color: rgb(89, 89, 216);
   text-align: left;
   font-weight: bolder;
@@ -49,6 +49,7 @@ a:hover{
 
 .photoTag{
   writing-mode: vertical-rl;
+  font-size: '19';
   transform: rotate(180deg) scale(1,2);
   color: #403e3e;
   position: relative;
@@ -67,8 +68,8 @@ a:hover{
 }
 
 .ItemDetailTitle {
-  font-size: 50px;
-  font-family: Arial;
+  font-size: 64px;
+  font-family: 'Arial';
   font-weight: 1000;
   padding: 20px 0px 20px 0px;
 }
@@ -108,10 +109,10 @@ ul {
 ul > li {
   float: left;
   padding-left: 40px;
-  font-size: 14px;
+  font-size: 13px;
 
 }
 .navHeader, .navFooter {
-  width: 1350px;
+  width: 1400px;
   height: 70px
 }

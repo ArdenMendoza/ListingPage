@@ -45,9 +45,9 @@ export class ItemDetails extends React.Component<Props, state> {
           {details.questions.map(q => {
             qCount++;
             return <div className={'itemDetailQGroup'}>
-              <div style={{ fontSize: '20px', fontWeight: 1000 }}>
+              <div style={{ fontSize: '32px', fontWeight: 1000 }}>
                 Question {qCount}</div>
-              <div style={{ textAlign: 'justify' }}>{q}</div>
+              <div style={{ textAlign: 'justify', fontSize: '21px', fontFamily: 'Georgia' }}>{q}</div>
             </div>
           })}
         </div>
