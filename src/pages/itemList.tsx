@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import data from '../feed/data.json';
 import CustomCard from '../components/customCard';
 import { item } from '../feed/model';

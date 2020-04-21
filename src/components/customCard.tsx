@@ -17,10 +17,11 @@ export const customCard = ({ itemDetails }: props) => {
             backgroundSize: 'cover',
             height: '350px',
         }}>
+            <div className={'photoTag'}>{itemDetails.tag}</div>
         </div>
         <div style={{
             fontWeight: 'bold',
-            fontSize: '18px',
+            fontSize: '21px',
             fontFamily: 'Arial',
             padding: '20px 0px 20px 0px'
         }}>

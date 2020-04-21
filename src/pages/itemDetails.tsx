@@ -37,6 +37,7 @@ export class ItemDetails extends React.Component<Props, state> {
       <div style={{ display: 'flex', height: '100%' }}>
         <div style={{ flex: 1, width: '50%', height: '100%' }}>
           <div style={{ height: '100%', backgroundImage: imageUrl, backgroundSize: 'auto', backgroundRepeat: 'no-repeat' }}>
+            <div className={'photoTag'}>{details.tag}</div>
           </div>
         </div>
         <div className={'itemDetailRightPanel'} style={{ flex: 1 }}>
@@ -44,7 +45,7 @@ export class ItemDetails extends React.Component<Props, state> {
           {details.questions.map(q => {
             qCount++;
             return <div className={'itemDetailQGroup'}>
-              <div style={{ fontSize: '20px', fontWeight: 1000}}>
+              <div style={{ fontSize: '20px', fontWeight: 1000 }}>
                 Question {qCount}</div>
               <div style={{ textAlign: 'justify' }}>{q}</div>
             </div>

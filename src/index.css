@@ -47,6 +47,17 @@ a:hover{
   background-repeat: no-repeat;
 }
 
+.photoTag{
+  writing-mode: vertical-rl;
+  transform: rotate(180deg) scale(1,2);
+  color: #403e3e;
+  position: relative;
+  top: 55px;
+  text-align: right;
+  float: left;
+  padding-bottom: 33px;
+}
+
 .card {
   width: calc(50% - 30px);
   float: left;
