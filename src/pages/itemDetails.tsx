@@ -33,10 +33,10 @@ export class ItemDetails extends React.Component<Props, state> {
     const imageUrl = 'url(' + require('../assets/' + details.image) + ')';
     let qCount: number = 0;
 
-    return <div style={{ height: "100%" }}>
+    return <div style={{ height: '1200px' }}>
       <div style={{ display: 'flex', height: '100%' }}>
         <div style={{ flex: 1, width: '50%', height: '100%' }}>
-          <div style={{ height: '100%', backgroundImage: imageUrl, backgroundSize: 'auto', backgroundRepeat: 'no-repeat' }}>
+          <div style={{ height: '1107px', backgroundImage: imageUrl, backgroundSize: 'auto', backgroundRepeat: 'no-repeat' }}>
             <div className={'photoTag'}>{details.tag}</div>
           </div>
         </div>

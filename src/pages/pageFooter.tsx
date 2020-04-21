@@ -2,7 +2,7 @@ import React from 'react';
 import { Nav } from 'react-bootstrap';
 import Logo from '../components/logo';
 
-function Header() {
+function Footer() {
   return (
     <Nav className={'navbar navbar-light navFooter'} style={{ display: 'flex', margin: '0px auto', borderTop: '1px black solid' }}>
       <a className='navbar-brand' href="#" style={{ width: '80px' }}>
@@ -20,4 +20,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Footer;

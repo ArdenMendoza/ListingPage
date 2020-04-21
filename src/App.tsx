@@ -9,9 +9,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
-      <div className="App" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+      <div className="App" style={{ height: '100%', flexDirection: 'column' }}>
         <Header />
-        <div style={{ flex: 1, overflowY: 'auto', width: '1400px', margin: '0px auto' }}>
+        <div style={{ overflowY: 'auto', width: '1400px', margin: '0px auto'}}>
           <Switch>
             <Route path="/" exact component={ItemList} />
             <Route path="/itemDetails/:id" component={ItemDetails} />

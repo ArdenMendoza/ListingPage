@@ -10,13 +10,14 @@ interface props {
 export const customCard = ({ itemDetails }: props) => {
     const thumb = 'url(' + require('../assets/' + itemDetails.thumb) + ')';
 
-    return <Card style={{ height: '450px' }}>
+    return <Card style={{ height: '521px', backgroundColor: '#f5f5f5' }}>
         <div className="cardImage" style={{
             flex: 1, overflow: 'hidden',
             backgroundImage: thumb,
             backgroundSize: 'cover',
             height: '350px',
         }}>
+            <div className={'cardImageOverlay'}></div>
             <div className={'photoTag'}>{itemDetails.tag}</div>
         </div>
         <div style={{

@@ -4,9 +4,9 @@ import Logo from '../components/logo';
 
 function Header() {
   return (
-    <Nav className={'navbar navbar-light navHeader'}  style={{ display: 'flex', margin: '0px auto' }}>
+    <Nav className={'navbar navbar-light navHeader'} style={{ display: 'flex', margin: '0px auto' }}>
       <a className='navbar-brand' href="#" style={{ width: '80px' }}>
-        <Logo/>
+        <Logo />
       </a>
       <ul style={{ listStyleType: 'none' }}>
         <li>Culture</li>
